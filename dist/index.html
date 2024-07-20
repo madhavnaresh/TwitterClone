@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home / X</title>
+    <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter.3.ico">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css">
@@ -27,7 +28,7 @@
             <!-- X logo ends -->
 
             <!-- Menu starts -->
-            <div class="sidebar flex justify-end">
+            <div class="sidebar flex flex-col items-end">
                 <ul class="flex flex-col space-y-4 text-2xl px-11">
                     <li class="flex justify-start items-center gap-3 w-fit px-3 hover:bg-gray-900 hover:rounded-full">
                         <span class="material-symbols-outlined text-3xl">
@@ -79,7 +80,11 @@
                             more_horiz
                         </span>More
                     </li>
-                    <button class="bg-sky-500 rounded-full text-xl px-2 py-3 font-bold">Post</button>
+                    <li>
+                        <div class="text-center my-4">
+                            <button class="bg-sky-500 rounded-full text-lg px-20 py-2 font-bold">Post</button>
+                        </div>
+                    </li>
                     <div class="flex flex-row pt-8">
                         <img class="w-14 rounded-full" src="/TwitterClone/Profile.jpg" alt="">
                         <div class="flex flex-col ml-3 justify-center">
@@ -88,6 +93,7 @@
                         </div>
                     </div>
                 </ul>
+
             </div>
             <!-- Menu ends -->
 
@@ -95,18 +101,95 @@
         <!-- left side bar ends -->
 
         <!-- mid section starts -->
-        <div class=" w-full border-[1px] border-x-white border-y-black">
-            bb
+        <div class=" w-full border-[0.5px] border-x-white border-y-black">
+
+            <!-- Top section starts -->
+            <div class="top flex p-3 relative">
+                <div class="absolute w-16 h-1 rounded-full bg-blue-600 bottom-0 z-10 left-[18%]"></div>
+                <div class="left w-1/2 flex justify-center font-bold text-lg">For you </div>
+                <div class="right w-1/2 flex justify-center text-lg">Following</div>
+                <div class="setting mx-2"><span class="material-symbols-outlined">settings</span></div>
+            </div>
+            <!-- Top section starts -->
+
+            <div class="h-[1px] w-full bg-slate-600"></div>
+
+            <!-- Wht's_happening starts -->
+            <div class="flex gap-4 mx-5">
+                <div class="ml-1 mt-4">
+                    <img class="w-14 rounded-full" src="/TwitterClone/Profile.jpg" alt="">
+                </div>
+                <input class="bg-black w-full h-7 my-5 text-xl text-white" type="text" placeholder="What's happening?!">
+            </div>
+            <!-- Wht's_happening starts -->
+
+            <!-- Blue icons starts -->
+            <div class="flex gap-2 space-x-40">
+                <div class="flex gap-3 ml-20 items-center">
+                    <span class="material-symbols-outlined cursor-pointer text-sky-500 text-xl">
+                        image
+                    </span>
+                    <span class="material-symbols-outlined cursor-pointer text-sky-500 text-xl">
+                        gif_box
+                    </span>
+                    <span class="material-symbols-outlined cursor-pointer text-sky-500 text-xl">
+                        ballot
+                    </span>
+                    <span class="material-symbols-outlined cursor-pointer text-sky-500 text-xl">
+                        sentiment_satisfied
+                    </span>
+                    <span class="material-symbols-outlined cursor-pointer text-sky-500 text-xl">
+                        pending_actions
+                    </span>
+                    <span class="material-symbols-outlined cursor-pointer text-sky-500 text-xl">
+                        location_on
+                    </span>
+                </div>
+                <div class="items-center">
+                    <button class="bg-sky-500 rounded-full text-lg px-4 py-1 font-bold">Post</button>
+                </div>
+            </div>
+            <div class="h-[.5px] w-full bg-slate-700 mt-3"></div>
+
+            <!-- Posts starts -->
+            <div class="posts">
+                <div class="post flex">
+                    <div class="img m-4">
+                        <img class="w-12 rounded-full"
+                            src="data:image/jpeg;base64,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dPIewVLPrLZK/EO3odmxaSZy3nqSeM4CluVWyZKcQB/+yawOOvffQLz2fd64bcUjlpq95x8zSlOY/Nl/5NaDRqO05vp+xbpQff8AefNVOu6xE8+lCxZ+G3i71ehdv+eD/wCqSm/Vj+GU1t3xX+vF/dbj+G0jN/53VG+/LCf7ra2+0n+GWa7vhrH4cT2z4Zx85c+5D176r9f6rW2/9uIrP9Wk7ti9sULGR+HM/K01pK9oMOwx7eQj7d1Lh3uk/VzCWu7abJ2zY+EBkMHcxzWtuUnRt39J0C39Qr+LVUy96WdbBqNHmiIxzDdvhzUkip2bT2FrJnAM3/Frz+3VcTeMkTNaRPhw98z1vlrSvs3FcJxFVhkQEBAQEBAQEBAQEBBRbdTEw8GCEuLjFGSe5LAt/XyfLaLW445Q2R4VxuQuNtSNdG8EcwjOg/XqFew7pmxU6PMLuHcdRhxzSs9mecRjzbjtfKx+NENMcB2Crzrcs1mnPaVf7Rm6Jp1dpZqq8oIjgWGVUBAQUIW0TxDHDy6Nj28r2Nc30I2tq5JrPMSRzHiVWNDGhrA1oHoNLFrzaeZJ5l6WjIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIP//Z"
+                            alt="">
+                    </div>
+                    <div class="content my-3 pt-2">
+                        <span class="font-bold hover:underline hover:cursor-pointer">Randomsena</span><span
+                            class="text-gray-500"> @randomsena · 1h</span>
+                        <div class="text-gray-500">Replying to <span
+                                class="text-blue-600 hover:underline cursor-pointer">@SonuSood</span></div>
+                        <div>Halal Certification pe bhi Bol agar Ek baap ki aulaad hai to</div>
+                    </div>
+                </div>
+                <div class="text-gray-500 flex border-2 pl-20 space-x-10">
+                    <span class="material-symbols-outlined flex text-lg">chat_bubble<div class="text-xs pt-1 pl-1">386</div>
+                    </span>
+                    <span class="material-symbols-outlined flex text-lg">chat_bubble<div class="text-xs pt-1 pl-1">386</div>
+                    </span>
+                    <span class="material-symbols-outlined flex text-lg">chat_bubble<div class="text-xs pt-1 pl-1">386</div>
+                    </span>
+                    <span class="material-symbols-outlined flex text-lg">chat_bubble<div class="text-xs pt-1 pl-1">386</div>
+                    </span>
+                    <span class="material-symbols-outlined flex text-lg">chat_bubble<div class="text-xs pt-1 pl-1">386</div>
+                    </span>
+                </div>
+            </div>
         </div>
         <!-- mid section ends -->
 
         <!-- right section starts -->
         <div class=" w-full">
             <div class="search mt-2 ml-6">
-                <input type="text" class="w-3/5 text-gray-500 bg-gray-700 px-4 py-2 rounded-full border-1"
+                <input type="text" class="w-3/5 text-gray-500 bg-[#16181c] px-4 py-2 rounded-full border-1"
                     placeholder="Search">
             </div>
-            <div class="Subscribe m-4 w-3/5 h-[20%] bg-black border-gray-800 border-2 rounded-xl px-4 py-2">
+            <div class="Subscribe m-4 w-3/5 h-[16%] bg-black border-gray-800 border-2 rounded-xl px-4 py-2">
                 <div class="text-white font-bold text-xl">Subscribe to Premium</div>
                 <div class="text-gray-400">Subscribe to unlock new features and if eligible, receive a share of ads
                     revenue.</div>
@@ -127,7 +210,8 @@
                     </div>
                 </div>
                 <div class="flex flex-col flex-wrap mt-4 ">
-                    <div class="flex flex-row items-center hover:bg-gray-800 hover:cursor-pointer hover:rounded p-2 space-x-40 mb-3">
+                    <div
+                        class="flex flex-row items-center hover:bg-gray-800 hover:cursor-pointer hover:rounded p-2 space-x-40 mb-3">
                         <div>
                             <div class="text-xs text-gray-500 ">Trending in India</div>
                             <div class="text-base font-bold">#CyberAttack</div>
@@ -137,18 +221,21 @@
                             ...
                         </div>
                     </div>
-                    <div class="flex flex-row items-center space-x-36 my-3 hover:bg-gray-800 hover:cursor-pointer hover:rounded p-2">
+                    <div
+                        class="flex flex-row items-center space-x-36 my-3 hover:bg-gray-800 hover:cursor-pointer hover:rounded p-2">
                         <div>
                             <div class="text-xs text-gray-500 ">Trending</div>
                             <div class="text-base font-bold">#RandomSena</div>
-                            <div class="text-xs text-gray-500 ">22.9k posts with <p class="text-blue-600">#SupportRandomSena</p>
+                            <div class="text-xs text-gray-500 ">22.9k posts with <p class="text-blue-600">
+                                    #SupportRandomSena</p>
                             </div>
                         </div>
                         <div>
                             ...
                         </div>
                     </div>
-                    <div class="flex flex-row items-center space-x-36 my-3 hover:bg-gray-800 hover:cursor-pointer hover:rounded p-2">
+                    <div
+                        class="flex flex-row items-center space-x-36 my-3 hover:bg-gray-800 hover:cursor-pointer hover:rounded p-2">
                         <div>
                             <div class="text-xs text-gray-500 ">Trending in India</div>
                             <div class="text-base font-bold">#HardikPandya</div>
@@ -158,7 +245,8 @@
                             ...
                         </div>
                     </div>
-                    <div class="flex flex-row items-center space-x-40 my-3 hover:bg-gray-800 hover:cursor-pointer hover:rounded p-2">
+                    <div
+                        class="flex flex-row items-center space-x-40 my-3 hover:bg-gray-800 hover:cursor-pointer hover:rounded p-2">
                         <div>
                             <div class="text-xs text-gray-500 ">Trending in world</div>
                             <div class="text-base font-bold">#ViratKohli</div>
@@ -168,7 +256,8 @@
                             ...
                         </div>
                     </div>
-                    <div class="flex flex-row items-center space-x-40 my-3 hover:bg-gray-800 hover:cursor-pointer hover:rounded p-2">
+                    <div
+                        class="flex flex-row items-center space-x-40 my-3 hover:bg-gray-800 hover:cursor-pointer hover:rounded p-2">
                         <div>
                             <div class="text-xs text-gray-500 ">Trending</div>
                             <div class="text-base font-bold">#Phonepe</div>
@@ -178,7 +267,8 @@
                             ...
                         </div>
                     </div>
-                    <div class="flex flex-row items-center space-x-32 my-3 hover:bg-gray-800 hover:cursor-pointer hover:rounded p-2">
+                    <div
+                        class="flex flex-row items-center space-x-32 my-3 hover:bg-gray-800 hover:cursor-pointer hover:rounded p-2">
                         <div>
                             <div class="text-xs text-gray-500 ">Trending in India</div>
                             <div class="text-base font-bold">#AmbaniWedding</div>
