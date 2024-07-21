@@ -12,13 +12,13 @@
 </head>
 
 <body class="bg-black text-white">
-    <div class="flex mx-auto container">
+    <div class="flex mx-auto md:container">
 
         <!-- left side bar starts -->
-        <div class="first w-[72%]">
+        <div class="first w-[70px] md:w-[72%]">
 
             <!-- X logo starts -->
-            <div class="logo m-auto invert w-10 my-4">
+            <div class="logo m-7 md:m-auto invert md:w-10 w-7 my-4">
                 <svg xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                     <path
@@ -28,66 +28,78 @@
             <!-- X logo ends -->
 
             <!-- Menu starts -->
-            <div class="sidebar flex flex-col items-end">
-                <ul class="flex flex-col space-y-4 text-2xl px-11">
-                    <li class="flex justify-start items-center gap-3 w-fit px-3 hover:bg-gray-900 hover:rounded-full">
+            <div class="sidebar flex flex-col md:items-end">
+                <ul class="flex flex-col space-y-4 text-2xl md:px-11 items-end md:items-start w-full justify-center md:pl-36">
+                    <li
+                        class="flex md:justify-start justify-center mr-1 items-center gap-3 md:w-fit px-3 hover:bg-gray-900 hover:rounded-full">
                         <span class="material-symbols-outlined text-3xl">
                             home
-                        </span>Home
+                        </span><span class="hidden md:block">Home</span>
                     </li>
-                    <li class="flex justify-start items-center gap-3 w-fit px-3 hover:bg-gray-900 hover:rounded-full">
+                    <li
+                        class="flex md:justify-start justify-center mr-1 items-center gap-3 md:w-fit px-3 hover:bg-gray-900 hover:rounded-full">
                         <span class="material-symbols-outlined text-3xl">
                             search
-                        </span>Explore
+                        </span><span class="hidden md:block">Explore</span>
                     </li>
-                    <li class="flex justify-start items-center gap-3 w-fit px-3 hover:bg-gray-900 hover:rounded-full">
+                    <li
+                        class="flex md:justify-start justify-center mr-1 items-center gap-3 md:w-fit px-3 hover:bg-gray-900 hover:rounded-full">
                         <span class="material-symbols-outlined text-3xl">
                             notifications
-                        </span>Notifications
+                        </span><span class="hidden md:block">Notifications</span>
                     </li>
-                    <li class="flex justify-start items-center gap-3 w-fit px-3 hover:bg-gray-900 hover:rounded-full">
+                    <li
+                        class="flex md:justify-start justify-center mr-1 items-center gap-3 md:w-fit px-3 hover:bg-gray-900 hover:rounded-full">
                         <span class="material-symbols-outlined text-3xl">
                             mail
-                        </span>Message
+                        </span><span class="hidden md:block">Message</span>
                     </li>
-                    <li class="flex justify-start items-center gap-3 w-fit px-3 hover:bg-gray-900 hover:rounded-full">
+                    <li
+                        class="flex md:justify-start justify-center mr-1 items-center gap-3 md:w-fit px-3 hover:bg-gray-900 hover:rounded-full">
                         <span class="material-symbols-outlined text-3xl">
                             bookmark
-                        </span>Bookmarks
+                        </span><span class="hidden md:block">Bookmarks</span>
                     </li>
-                    <li class="flex justify-start items-center gap-3 w-fit px-3 hover:bg-gray-900 hover:rounded-full">
+                    <li
+                        class="flex md:justify-start justify-center mr-1 items-center gap-3 md:w-fit px-3 hover:bg-gray-900 hover:rounded-full">
                         <span class="material-symbols-outlined text-3xl">
                             group
-                        </span>Communities
+                        </span><span class="hidden md:block">Communities</span>
                     </li>
-                    <li class="flex justify-start items-center gap-3 w-fit px-3 hover:bg-gray-900 hover:rounded-full">
+                    <li
+                        class="flex md:justify-start justify-center mr-1 items-center gap-3 md:w-fit px-3 hover:bg-gray-900 hover:rounded-full">
                         <span class="material-symbols-outlined text-3xl">
                             license
-                        </span>Premium
+                        </span><span class="hidden md:block">Premium</span>
                     </li>
-                    <li class="flex justify-start items-center gap-3 w-fit px-3 hover:bg-gray-900 hover:rounded-full">
+                    <li
+                        class="flex md:justify-start justify-center mr-1 items-center gap-3 md:w-fit px-3 hover:bg-gray-900 hover:rounded-full">
                         <span class="material-symbols-outlined text-3xl">
                             bolt
-                        </span>Verified orgs
+                        </span><span class="hidden md:block">Verified orgs</span>
                     </li>
-                    <li class="flex justify-start items-center gap-3 w-fit px-3 hover:bg-gray-900 hover:rounded-full">
+                    <li
+                        class="flex md:justify-start justify-center mr-1 items-center gap-3 md:w-fit px-3 hover:bg-gray-900 hover:rounded-full">
                         <span class="material-symbols-outlined text-3xl">
                             person
-                        </span>Profile
+                        </span><span class="hidden md:block">Profile</span>
                     </li>
-                    <li class="flex justify-start items-center gap-3 w-fit px-3 hover:bg-gray-900 hover:rounded-full">
+                    <li
+                        class="flex md:justify-start justify-center mr-1 items-center gap-3 md:w-fit px-3 hover:bg-gray-900 hover:rounded-full">
                         <span class="material-symbols-outlined text-3xl">
                             more_horiz
-                        </span>More
+                        </span><span class="hidden md:block">More</span>
                     </li>
                     <li>
-                        <div class="text-center my-4">
+                        <div class="text-center my-4 hidden md:block">
                             <button class="bg-sky-500 rounded-full text-lg px-20 py-2 font-bold">Post</button>
                         </div>
                     </li>
-                    <div class="flex flex-row pt-8">
-                        <img class="w-14 rounded-full" src="/TwitterClone/Profile.jpg" alt="">
-                        <div class="flex flex-col ml-3 justify-center">
+                    <div class="flex flex-row pt-8 mr-2 md:mr-0">
+                        <div class="">
+                            <img class="w-12 md:w-14 rounded-full" src="/TwitterClone/Profile.jpg" alt="">
+                        </div>
+                        <div class="md:flex flex-col ml-3 justify-center hidden">
                             <div class="text-base font-bold">Madhav Gupta</div>
                             <div class="text-xs text-gray-500">@MadhavG25201513</div>
                         </div>
@@ -101,7 +113,7 @@
         <!-- left side bar ends -->
 
         <!-- mid section starts -->
-        <div class=" w-full border-[0.5px] border-x-slate-600 border-y-black">
+        <div class="w-[82%] md:w-full border-[0.5px] border-x-slate-600 border-y-black">
 
             <!-- Top section starts -->
             <div class="top flex p-3 relative">
@@ -124,7 +136,7 @@
             <!-- Wht's_happening ends -->
 
             <!-- Blue icons starts -->
-            <div class="flex gap-2 space-x-48">
+            <div class="flex justify-between">
                 <div class="flex gap-3 ml-20 items-center">
                     <span class="material-symbols-outlined cursor-pointer text-sky-500 text-xl">
                         image
@@ -145,7 +157,7 @@
                         location_on
                     </span>
                 </div>
-                <div class="items-center">
+                <div class="items-center mr-5">
                     <button class="bg-sky-500 rounded-full text-lg px-4 py-1 font-bold">Post</button>
                 </div>
             </div>
@@ -156,7 +168,7 @@
             <div class="flex justify-center items-center mt-1 pt-2">
                 <div class="text-sky-500">Show 173 posts</div>
             </div>
-            <div class="h-[.5px] w-full bg-slate-700 mt-3"></div>
+            <div class="h-[1px] w-full bg-slate-700 mt-3"></div>
 
             <!-- Posts starts -->
             <div class="posts">
@@ -174,10 +186,10 @@
                                 class="text-gray-500"> @randomsena · 1h</span>
                             <div class="text-gray-500">Replying to <span
                                     class="text-sky-500 hover:underline cursor-pointer">@SonuSood</span></div>
-                            <div>Halal Certification pe bhi Bol agar Ek baap ki aulaad hai to</div>
+                            <div class="mr-1">Halal Certification pe bhi Bol agar Ek baap ki aulaad hai to</div>
                         </div>
                     </div>
-                    <div class="text-gray-500 flex pl-20 space-x-14">
+                    <div class="text-gray-500 flex md:pl-20 pl-16 md:space-x-14 justify-between mr-1">
                         <div class="flex space-x-1">
                             <span class="material-symbols-outlined flex text-lg">chat_bubble
                             </span>
@@ -210,11 +222,11 @@
                 </div>
                 <!-- first post ends -->
 
-                <div class="h-[.5px] w-full bg-slate-700 mt-3"></div>
+                <div class="h-[1px] w-full bg-slate-700 mt-3"></div>
 
                 <!-- Second post starts -->
                 <div class="1st post">
-                    <div class="post_1 flex">
+                    <div class="post_2 flex">
                         <div class="img m-4">
                             <img class="w-36 rounded-full"
                                 src="data:image/jpeg;base64,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"
@@ -226,13 +238,13 @@
                             <!-- <div class="text-gray-500">Replying to <span
                                     class="text-sky-500 hover:underline cursor-pointer">@SonuSood</span>
                             </div> -->
-                            <div class="text-sm">मैंने खाने में थूकने वालों को कभी सही नहीं बताया। वो उनका चरित्र है जो
+                            <div class="text-sm mr-1">मैंने खाने में थूकने वालों को कभी सही नहीं बताया। वो उनका चरित्र है जो
                                 कभी नहीं बदलेगा। इसके लिए उन्हें कढ़ीं सज़ा भी दें।
                                 लेकिन इंसानियत को इंसानियत ही रहने दें दोस्त। जितना समय हम एक दूसरे को समझाने में लगे
                                 हैं उतना समय ज़रूरतमंद लोगों पे लगा दें ! वैसे आप सब के लिए बता दूँ ,,</div>
                         </div>
                     </div>
-                    <div class="text-gray-500 flex pl-20 space-x-14">
+                    <div class="text-gray-500 flex md:pl-20 pl-16 md:space-x-14 justify-between mr-1">
                         <div class="flex space-x-1">
                             <span class="material-symbols-outlined flex text-lg">chat_bubble
                             </span>
@@ -265,7 +277,7 @@
                 </div>
                 <!-- Second post ends -->
 
-                <div class="h-[.5px] w-full bg-slate-700 mt-3"></div>
+                <div class="h-[1px] w-full bg-slate-700 mt-3"></div>
 
                 <!-- Third post starts -->
                 <div class="1st post">
@@ -281,7 +293,7 @@
                             <!-- <div class="text-gray-500">Replying to <span
                                     class="text-sky-500 hover:underline cursor-pointer">@SonuSood</span>
                             </div> -->
-                            <div class="text-sm">यह मुल्क मुसलमानों का भी उतना ही है जितना बाकी सब का।</div>
+                            <div class="text-sm mr-1">यह मुल्क मुसलमानों का भी उतना ही है जितना बाकी सब का।</div>
                             <br>
                             <div class="text-sm">-तुषार गांधी</div>
                             <div class="mt-3 mr-4">
@@ -290,7 +302,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text-gray-500 flex pl-20 space-x-14">
+                    <div class="text-gray-500 flex md:pl-20 pl-16 md:space-x-14 justify-between mr-1">
                         <div class="flex space-x-1">
                             <span class="material-symbols-outlined flex text-lg">chat_bubble
                             </span>
@@ -327,7 +339,7 @@
         <!-- mid section ends -->
 
         <!-- right section starts -->
-        <div class=" w-full">
+        <div class=" w-full hidden md:block sm:hidden">
             <div class="search mt-2 ml-6">
                 <input type="text" class="w-3/5 text-gray-500 bg-[#16181c] px-4 py-2 rounded-full border-1"
                     placeholder="Search">
