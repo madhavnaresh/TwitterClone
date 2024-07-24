@@ -21,8 +21,7 @@
             <div class="sidebar flex flex-col md:items-end sticky top-0">
                 <!-- X logo starts -->
                 <div class="logo invert md:w-10 my-4 md:self-start md:mx-40 w-[30px] mx-6 cursor-pointer">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path
                             d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
                     </svg>
@@ -103,7 +102,7 @@
                     </li>
                 </ul>
                 <div
-                    class="flex md:mt-8 md:py-2 pt-6 cursor-pointer space-x-16 md:hover:bg-gray-900 hover:rounded-full">
+                    class="flex md:mt-8 md:py-2 pt-6 cursor-pointer space-x-16 md:hover:bg-gray-900 hover:rounded-full min-[1280px]:mr-28 min-[1536px]:mr-0">
                     <div class="flex flex-col">
                         <div class="md:flex ml-3 justify-center">
                             <img class="w-12 md:w-16 rounded-full" src="/dist/Profile.jpg" alt="">
@@ -171,7 +170,8 @@
                     </span>
                 </div>
                 <div class="items-center mr-5">
-                    <button class="bg-sky-500 rounded-full text-lg px-4 py-1 font-bold">Post</button>
+                    <button
+                        class="bg-sky-500 rounded-full text-lg px-4 py-1 font-bold hidden min-[400px]:block">Post</button>
                 </div>
             </div>
             <!-- Blue icons ends -->
@@ -365,7 +365,7 @@
         <!-- mid section ends -->
 
         <!-- right section starts -->
-        <div class=" w-full hidden md:block sm:hidden sticky top-0">
+        <div class=" w-full hidden 2xl:block sticky top-0">
             <div class="search mt-2 ml-6 sticky top-2">
                 <input type="text" class="w-3/5 text-gray-500 bg-[#16181c] px-4 py-2 rounded-full border-1"
                     placeholder="Search">

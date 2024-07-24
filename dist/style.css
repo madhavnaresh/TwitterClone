@@ -1162,9 +1162,15 @@ video {
   text-decoration-line: underline;
 }
 
-@media (min-width: 640px) {
-  .sm\:hidden {
-    display: none;
+@media (max-width: 1535px) {
+  .max-\[1535px\]\:mr-0 {
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 400px) {
+  .min-\[400px\]\:block {
+    display: block;
   }
 }
 
@@ -1254,5 +1260,47 @@ video {
   .md\:hover\:bg-gray-900:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  }
+}
+
+@media (min-width: 1280px) {
+  .min-\[1280px\]\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .min-\[1280px\]\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .min-\[1280px\]\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
+  .min-\[1280px\]\:mr-20 {
+    margin-right: 5rem;
+  }
+
+  .min-\[1280px\]\:mr-24 {
+    margin-right: 6rem;
+  }
+
+  .min-\[1280px\]\:mr-28 {
+    margin-right: 7rem;
+  }
+}
+
+@media (min-width: 1535px) {
+  .min-\[1535px\]\:mr-0 {
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:block {
+    display: block;
+  }
+
+  .min-\[1536px\]\:mr-0 {
+    margin-right: 0px;
   }
 }
